@@ -1,0 +1,143 @@
+* {
+    color: antiquewhite;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    
+}
+ /*cabecalho */
+
+.cabeca {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    
+}
+
+.logo {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.nave {
+    
+    justify-content: space-between;
+    margin-right: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-decoration: none;
+
+    color: aliceblue;
+
+    padding: .3rem;
+    transform: 2ms ease-in;
+    position: relative;
+    margin: 0;
+}
+
+.nave a::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: yellow;
+    transition: all 1.5s ease;
+    margin: 0;
+
+}
+
+.nave a:hover::before {
+    width: 100%;
+
+}
+
+body {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(20, 20,20, 1)), url(imgs/pexels-victor-freitas-841130.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+
+}
+
+.conteudo {
+
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+
+    
+}
+
+h1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    color: rgb(186, 186, 187);
+}
+
+.bts {
+
+    display: flex;
+    justify-content: center;
+    gap:  20px;
+    align-items: center;
+
+}
+
+.bts button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+
+}
+
+.bts button:hover {
+    color: yellow;
+    border: none;
+}
+
+
+
+.bts button::before {
+
+    content: '';
+    bottom: 0;
+    border-radius: 20px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(141, 141, 131);
+    z-index: -1;
+    transition: 1s;
+}
+
+.bts button:hover:before {
+    width: 100%;
+
+}
+
+
+
+
+
