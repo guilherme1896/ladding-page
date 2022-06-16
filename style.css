@@ -1,3 +1,55 @@
+@media(max-width: 500px) {
+   
+    body {
+        width: 380px;
+
+    }
+    .conteudo {
+        margin-top: -40px;   
+    }
+    header {
+        flex-wrap: wrap;
+        display: flex;
+        height: 200px;
+        width: 350px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        
+        
+    }
+   
+    .logo {
+       
+        margin-top: 10px;
+        margin-left: 00px;
+        padding-left: 0px;
+        
+    }
+    .nave {
+        
+        flex-wrap: wrap;
+        display: flex;
+        width: 60px;
+        margin-left: 60px;
+        
+        
+    }
+
+    .bts {
+        
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+}
+
+
+
+
+
 * {
     color: antiquewhite;
 }
